@@ -1,0 +1,13 @@
+MATH                                    NARRATIVE
+
+##Lswap                                 ##Mechanism
+   │                                         │
+   │ <used in proof>                         │ <how>
+   ▼                                         ▼
+##T1 ────────────────────────────────────▶ ##Nclaim
+                   <supports>
+
+<given at T1: square A,B; AB=BA; nonnegative integer n>
+<Read-order: Nclaim, Mechanism; not proof-dependency order>
+<imports at Nclaim: T1 directly; Lswap is transitive via T1>
+<basis: illustrative, not a map extracted from a source manuscript>

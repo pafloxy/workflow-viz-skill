@@ -1,0 +1,10 @@
+FINAL MAP | example | code | current model
+
++-- #Pipeline(@text) ------------------------------------+
+|                                                        |
+|  ##Parse ---------> ##Check ---------> ##Report        |
+|           @tree             @result                    |
+|                                                        |
+|  <preserve: validation stays outside parsing>          |
+|  <basis: illustrative; tests not run>                  |
++--------------------------------------------------------+

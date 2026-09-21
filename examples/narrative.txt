@@ -1,0 +1,15 @@
+┌─ #Nclaim(@identity) <reader contribution> [*] ───────────────────────────┐
+│                                                                          │
+│ <entry: reader knows matrix multiplication>                              │
+│ <exit: reader sees why commutation allows the identity>                  │
+│ <needs: noncommuting matrices can change under reordering>               │
+│ <imports: T1; direct support under AB=BA; informal argument>             │
+│                                                                          │
+│ ##Mechanism ───────────────▶ ##Claim                                     │
+│                <how>                                                     │
+│ ##Boundary ────────────────▶ ##Claim                                     │
+│              <qualifies>                                                 │
+│                                                                          │
+│ <Read-order: Claim, Mechanism, Boundary>                                 │
+│ <guard: never extend the claim to arbitrary matrices>                    │
+└──────────────────────────────────────────────────────────────────────────┘

@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "status": "PARTIAL_CURRENT_SESSION_SMOKE",
+  "cases": [
+    {
+      "id": "C01",
+      "domain": "code",
+      "prompt": "Explain a parser-validator dependency without editing files.",
+      "expected": "map-first; named relation; no mutation",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C02",
+      "domain": "code",
+      "prompt": "Implement the sales-summary demo in DEMOS.md.",
+      "expected": "typed boundaries; real tests; maps before work and final",
+      "status": "PASS_CURRENT_SESSION_SMOKE"
+    },
+    {
+      "id": "C03",
+      "domain": "code",
+      "prompt": "Fix a one-line typo.",
+      "expected": "micro-map at most; no fabricated architectural revision",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C04",
+      "domain": "code",
+      "prompt": "Caller schema changed; target module file is untouched.",
+      "expected": "untouched is not unaffected; affected contract rechecked",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C05",
+      "domain": "layout",
+      "prompt": "Open two collaborating peers and trace one object across them.",
+      "expected": "both peers expanded; continuous aligned wire; blank label rows",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C06",
+      "domain": "layout",
+      "prompt": "The direct arrow would ambiguously cross another flow.",
+      "expected": "named-value fallback; explanation; no false junction",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C07",
+      "domain": "layout",
+      "prompt": "Use ASCII at 64 columns.",
+      "expected": "ASCII only; compact; no dropped caveats",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C08",
+      "domain": "math",
+      "prompt": "Expand the induction step of the commuting-matrix identity.",
+      "expected": "precise subclaims; local induction assumption; lemma imports",
+      "status": "PASS_CURRENT_SESSION_SMOKE"
+    },
+    {
+      "id": "C09",
+      "domain": "math",
+      "prompt": "Hide the lemma box and keep its theorem visible.",
+      "expected": "import retains identity role status; not converted into assumption",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C10",
+      "domain": "math",
+      "prompt": "Two premises are jointly required, but a separate proof route is optional.",
+      "expected": "joint AND vs alternative route unambiguous",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C11",
+      "domain": "math",
+      "prompt": "The source displays the implication in the reverse direction to its prose.",
+      "expected": "source discrepancy flagged; no silent replacement",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C12",
+      "domain": "math",
+      "prompt": "Numerical tests passed for several cases. Is the theorem verified?",
+      "expected": "experiments not a general proof or formal certificate",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C13",
+      "domain": "narrative",
+      "prompt": "Outline a subsection before drafting it.",
+      "expected": "reader entry/exit; narrative units not forced into headings",
+      "status": "PASS_CURRENT_SESSION_SMOKE"
+    },
+    {
+      "id": "C14",
+      "domain": "narrative",
+      "prompt": "Present conclusion first and explanation later.",
+      "expected": "Read-order distinct from explanatory edge direction",
+      "status": "PASS_CURRENT_SESSION_SMOKE"
+    },
+    {
+      "id": "C15",
+      "domain": "paired",
+      "prompt": "Theorem depends on L, and supports N. Hide theorem T.",
+      "expected": "do not promote L to direct support of N",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C16",
+      "domain": "paired",
+      "prompt": "Preview and later remind the reader of the same result.",
+      "expected": "one canonical ID; separate occurrences",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C17",
+      "domain": "interaction",
+      "prompt": "/module-expand #T1, then /module-context #T1",
+      "expected": "conversational interpretation; IDs preserved; no shell invocation",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C18",
+      "domain": "interaction",
+      "prompt": "No tests can be run; provide current result.",
+      "expected": "FINAL partial/unchecked; no fake verification",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C19",
+      "domain": "negative",
+      "prompt": "Hey!",
+      "expected": "no map or setup work",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C20",
+      "domain": "negative",
+      "prompt": "Return only JSON: {\"ok\":true}",
+      "expected": "exact requested output; no diagram",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C21",
+      "domain": "negative",
+      "prompt": "Give only the revised paragraph, no explanation.",
+      "expected": "only prose deliverable; do not substitute a diagram",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C22",
+      "domain": "static",
+      "prompt": "Use maps while working but do not open a pane.",
+      "expected": "ordinary assistant text; no viewer/hooks/process setup",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C23",
+      "domain": "semantics",
+      "prompt": "Show containment and mathematical dependence for a reused lemma.",
+      "expected": "a shared dependency is not automatically a child of each user",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "C24",
+      "domain": "fidelity",
+      "prompt": "Explain an existing source that lacks a needed proof step.",
+      "expected": "missing obligation marked; reconstruction explicitly proposed",
+      "status": "NOT_RUN"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+┌─ #T1(@A,@B,@n) <theorem> [*] ────────────────────────────────────────────┐
+│                                                                          │
+│ <claim: (AB)^n = A^n B^n>                                                │
+│ <given: square matrices A,B; AB=BA; n is a nonnegative integer>          │
+│ <imports: Lswap; commuting powers; informal lemma; off-screen>           │
+│                                                                          │
+│ ##Base <claim: identity at n=0>                                          │
+│ ##Step <claim: identity at k implies identity at k+1>                    │
+│                                                                          │
+│ <Base and Step jointly establish T1 by induction>                        │
+│ <scope: induction hypothesis is local to Step>                           │
+│ <evidence: illustrative proof outline, not formal certification>         │
+└──────────────────────────────────────────────────────────────────────────┘
