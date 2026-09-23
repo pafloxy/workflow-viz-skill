@@ -1,20 +1,3 @@
-# Workflow Visualization Skill
-
-One visual language for your agent to explain different workflows, be it software, manthematical arguments, narrative of scientific documents, directly in the terminal. The aim is to force your agent speak in crisp structured diagrams instead of writing sloppy-long descriptions that will hurt your soul and mind. 
-
-![img](aux/sample0-workflow0viz.png)
-
-
-
-
-Note that, this skill is used by the agent as a means for communicating and is regenerated whenver the agent wants your attenion on a certain part of the workflow. 
-
- 
-
-## One Selected Grammar 
-
-The current visualization routine uses the following grammar acroos programmig
-
 ## Visual grammar across domains
 
 | Symbol | Stable meaning | Programming | Mathematics | Narrative |
@@ -35,65 +18,16 @@ The current visualization routine uses the following grammar acroos programmig
 
 > `#`, `##`, and `###` describe how much is revealed **in the current view**. They are not permanent hierarchy levels. Likewise, containment, data flow, proof dependence, rhetorical support, and reading order are different relationships and should not share an unlabeled arrow.
 
-Refer to [VISUALIZATION-GRAMMAR.md](VISUALIZATION-GRAMMAR.md) for more details. 
 
 
-## How to use it ?
 
-### SKILL file 
+## Reading the map
 
-The shipped Agent Skill is in [SKILL.md](SKILL.md). It gives an agent stable module IDs, recursive disclosure, typed objects, directed relations, and scoped hidden context. Maps appear in ordinary terminal or chat messages. You can edit the [VISUALIZATION-GRAMMAR.md](VISUALIZATION-GRAMMAR.md) as per your requirement and pass it to the agent along with the SKILL.md file.
+| Symbol | Programming | Mathematics | Narrative |
+|---|---|---|---|
+| `#Unit(@x)` | Function or component. | Theorem or proof step. | Section or claim. |
+| `##Unit` | Hidden child function. | Hidden supporting lemma. | Hidden supporting idea. |
+| `@name` | Data or result. | Object or assumption. | Claim or evidence. |
+| `A ──▶ B` | Data flows to a consumer. | A result supports another result. | An idea supports or explains another idea. |
 
-
-### Agent handoff
-
-For a direct agentic handoff, point your agent to [AGENT_HANDOFF.md](AGENT_HANDOFF.md) first. It states the public scope, required reading order, task branches, and completion criteria.
-
-### Invocation
-
-Give an agent [SKILL.md](SKILL.md) together with a task, or invoke it explicitly with: `Use $module-map-visuals for this task.`
-
-For default-on communication, merge [integrations/AGENTS.md.snippet](integrations/AGENTS.md.snippet) into the applicable agent instructions. The snippet controls presentation only; it does not grant file access or mutation permission.
-
-
-## Everyday prompts
-
-- Explain this code and show the relevant callers.
-- Map this proof, including hidden assumptions, lemmas, defintions.
-- Plan this subsection and show which results support each narrative unit.
-- Expand #Parser, show the context of #T1, or use ASCII only at 80 columns.
-
-Configuration is declarative: specify `charset=ascii|unicode`, `width=80`, `expanded_layers=2`, or `detail=compact|normal` in the request. These are prompt conventions, not command-line flags.
-
-See [EXAMPLES.md](EXAMPLES.md) for explanatory notes, [examples/](examples/) for static specimens, [DEMOS.md](DEMOS.md) for self-contained tasks, and [evals/](evals/) for behavioral evaluation records.
-
-## Product boundary
-
-This is a static text skill. It has no worker, viewer, window, pane, hook, event stream, animation, server, browser integration, background process, or runtime dependency.
-
-## Installation and publication
-
-Place the skill folder in a supported user- or project-scoped Agent Skills location after checking that an existing same-name skill will not be overwritten. A folder containing only [SKILL.md](SKILL.md) is sufficient.
-
-After publication, an optional discovery route is:
-
-```sh
-npx skills add pafloxy/modular-view-skill --skill module-map-visuals --agent codex
-```
-
-This optional installer is not a runtime dependency. Copying the skill folder remains sufficient.
-
-## Evidence and limits
-
-The package fixture suite validates the skill’s structure and static specimens. Behavioral evidence is partial and recorded in [evals/CURRENT_SESSION_SMOKE.md](evals/CURRENT_SESSION_SMOKE.md); remaining cases retain their stated status in [evals/cases.json](evals/cases.json). A geometry check cannot establish that a depicted dependency is true.
-
-## Sources
-
-- [Agent Skills format](https://agentskills.io/specification)
-- [Codex skills](https://developers.openai.com/codex/skills/)
-- [Codex instructions](https://developers.openai.com/codex/guides/agents-md/)
-- [Optional distribution CLI](https://github.com/vercel-labs/skills)
-
-## License
-
-MIT © 2026 Rajarsi Pal. See [LICENSE](LICENSE).
+> `#` means visible; `##` means present but unopened; `@` names what flows between modules.
