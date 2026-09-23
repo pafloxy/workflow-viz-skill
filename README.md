@@ -1,10 +1,9 @@
 # Workflow Visualization Skill
 
-One visual language for your agent to explain different workflows, be it software, manthematical arguments, narrative of scientific documents, directly in the terminal. The aim is to force your agent speak in crisp structured diagrams instead of writing sloppy-long descriptions that will hurt your soul and mind. 
+One **visual language** for your agent to explain different workflows, be it **software**, **mathematical arguments**, **narrative progrssion of scientific documents**, directly in the terminal. The aim is to force your agent speak in **crisp structured diagrams** instead of writing sloppy-long descriptions that will hurt your soul and mind. 
+
 
 ![img](aux/sample0-workflow0viz.png)
-
-
 
 
 Note that, this skill is used by the agent as a means for communicating and is regenerated whenver the agent wants your attenion on a certain part of the workflow. 
